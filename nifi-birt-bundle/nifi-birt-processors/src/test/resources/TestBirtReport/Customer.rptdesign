@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.1.v201408290142 Build &lt;4.4.1.v20140916-1320></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.enablement.oda.xml" name="XMLCustomerDataSource" id="7">
+            <property name="FILELIST">CustSample.xml</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.enablement.oda.xml.dataSet" name="CustomerDataSet" id="8">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">C_CUSTKEY</property>
+                    <text-property name="heading">C_CUSTKEY</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">C_NAME</property>
+                    <text-property name="heading">C_NAME</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">C_ADDRESS</property>
+                    <text-property name="heading">C_ADDRESS</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">C_NATIONKEY</property>
+                    <text-property name="heading">C_NATIONKEY</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">C_PHONE</property>
+                    <text-property name="heading">C_PHONE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">C_ACCTBAL</property>
+                    <text-property name="heading">C_ACCTBAL</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">C_MKTSEGMENT</property>
+                    <text-property name="heading">C_MKTSEGMENT</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">C_COMMENT</property>
+                    <text-property name="heading">C_COMMENT</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">C_CUSTKEY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">C_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">C_ADDRESS</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">C_NATIONKEY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">C_PHONE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">C_ACCTBAL</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">C_MKTSEGMENT</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">C_COMMENT</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">XMLCustomerDataSource</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">C_CUSTKEY</property>
+                    <property name="nativeName">C_CUSTKEY</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">C_NAME</property>
+                    <property name="nativeName">C_NAME</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">C_ADDRESS</property>
+                    <property name="nativeName">C_ADDRESS</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">C_NATIONKEY</property>
+                    <property name="nativeName">C_NATIONKEY</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">C_PHONE</property>
+                    <property name="nativeName">C_PHONE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">C_ACCTBAL</property>
+                    <property name="nativeName">C_ACCTBAL</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">C_MKTSEGMENT</property>
+                    <property name="nativeName">C_MKTSEGMENT</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">C_COMMENT</property>
+                    <property name="nativeName">C_COMMENT</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[table0#-TNAME-#table0#:#[/Customer]#:#{C_CUSTKEY;STRING;/C_CUSTKEY},{C_NAME;STRING;/C_NAME},{C_ADDRESS;STRING;/C_ADDRESS},{C_NATIONKEY;STRING;/C_NATIONKEY},{C_PHONE;STRING;/C_PHONE},{C_ACCTBAL;STRING;/C_ACCTBAL},{C_MKTSEGMENT;STRING;/C_MKTSEGMENT},{C_COMMENT;STRING;/C_COMMENT}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>C_CUSTKEY</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>C_CUSTKEY</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>C_NAME</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>C_NAME</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>C_ADDRESS</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>C_ADDRESS</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>C_NATIONKEY</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>C_NATIONKEY</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>C_PHONE</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>C_PHONE</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>C_ACCTBAL</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>C_ACCTBAL</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>C_MKTSEGMENT</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>C_MKTSEGMENT</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>C_COMMENT</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>C_COMMENT</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>MAX_ROW</name>
+                    <value>-1</value>
+                </ex-property>
+                <ex-property>
+                    <name>XML_FILE</name>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="topMargin">0.5in</property>
+            <property name="leftMargin">0.5in</property>
+            <property name="bottomMargin">0.5in</property>
+            <property name="rightMargin">0.5in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="61">
+            <property name="fontSize">36pt</property>
+            <property name="marginBottom">30pt</property>
+            <text-property name="text">Customer</text-property>
+        </label>
+        <grid id="62">
+            <property name="width">7.947916666666667in</property>
+            <column id="63">
+                <property name="width">2.0625in</property>
+            </column>
+            <column id="64">
+                <property name="width">4.197916666666667in</property>
+            </column>
+            <column id="65">
+                <property name="width">1.6875in</property>
+            </column>
+            <row id="66">
+                <cell id="67">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <label id="99">
+                        <text-property name="text">balance</text-property>
+                    </label>
+                </cell>
+                <cell id="68">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <data id="98">
+                        <property name="dataSet">CustomerDataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">C_ACCTBAL</property>
+                                <text-property name="displayName">C_ACCTBAL</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["C_ACCTBAL"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">C_ACCTBAL</property>
+                    </data>
+                </cell>
+                <cell id="69">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                </cell>
+            </row>
+            <row id="70">
+                <cell id="71">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <label id="101">
+                        <text-property name="text">address</text-property>
+                    </label>
+                </cell>
+                <cell id="72">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <data id="100">
+                        <property name="dataSet">CustomerDataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">C_ADDRESS</property>
+                                <text-property name="displayName">C_ADDRESS</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["C_ADDRESS"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">C_ADDRESS</property>
+                    </data>
+                </cell>
+                <cell id="73">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                </cell>
+            </row>
+            <row id="74">
+                <cell id="75">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <label id="107">
+                        <text-property name="text">custkey</text-property>
+                    </label>
+                </cell>
+                <cell id="76">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <data id="104">
+                        <property name="dataSet">CustomerDataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">C_CUSTKEY</property>
+                                <text-property name="displayName">C_CUSTKEY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["C_CUSTKEY"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">C_CUSTKEY</property>
+                    </data>
+                </cell>
+                <cell id="77">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                </cell>
+            </row>
+            <row id="78">
+                <cell id="79">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <label id="106">
+                        <text-property name="text">name</text-property>
+                    </label>
+                </cell>
+                <cell id="80">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <data id="105">
+                        <property name="dataSet">CustomerDataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">C_NAME</property>
+                                <text-property name="displayName">C_NAME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["C_NAME"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">C_NAME</property>
+                    </data>
+                </cell>
+                <cell id="81">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                </cell>
+            </row>
+            <row id="82">
+                <cell id="83">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <label id="109">
+                        <text-property name="text">phone</text-property>
+                    </label>
+                </cell>
+                <cell id="84">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <data id="108">
+                        <property name="dataSet">CustomerDataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">C_PHONE</property>
+                                <text-property name="displayName">C_PHONE</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["C_PHONE"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">C_PHONE</property>
+                    </data>
+                </cell>
+                <cell id="85">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                </cell>
+            </row>
+            <row id="86">
+                <cell id="87">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <label id="111">
+                        <text-property name="text">nationkey</text-property>
+                    </label>
+                </cell>
+                <cell id="88">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <data id="110">
+                        <property name="dataSet">CustomerDataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">C_NATIONKEY</property>
+                                <text-property name="displayName">C_NATIONKEY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["C_NATIONKEY"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">C_NATIONKEY</property>
+                    </data>
+                </cell>
+                <cell id="89">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                </cell>
+            </row>
+            <row id="90">
+                <cell id="91">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <label id="113">
+                        <text-property name="text">market</text-property>
+                    </label>
+                </cell>
+                <cell id="92">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <data id="112">
+                        <property name="dataSet">CustomerDataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">C_MKTSEGMENT</property>
+                                <text-property name="displayName">C_MKTSEGMENT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["C_MKTSEGMENT"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">C_MKTSEGMENT</property>
+                    </data>
+                </cell>
+                <cell id="93">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                </cell>
+            </row>
+            <row id="94">
+                <cell id="95">
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <label id="103">
+                        <text-property name="text">comment</text-property>
+                    </label>
+                </cell>
+                <cell id="96">
+                    <property name="colSpan">2</property>
+                    <property name="rowSpan">1</property>
+                    <property name="fontSize">14pt</property>
+                    <property name="paddingTop">30pt</property>
+                    <data id="102">
+                        <property name="dataSet">CustomerDataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">C_COMMENT</property>
+                                <text-property name="displayName">C_COMMENT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["C_COMMENT"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <property name="resultSetColumn">C_COMMENT</property>
+                    </data>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

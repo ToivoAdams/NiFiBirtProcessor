@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>nifi-birt-bundle</artifactId>
+  <packaging>pom</packaging>
+  
+  <properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <parent>
+	<groupId>org.apache.nifi</groupId>
+	<artifactId>nifi-nar-bundles</artifactId>
+	<version>0.0.2-incubating-SNAPSHOT</version>
+  </parent>
+
+  <modules>
+  	<module>nifi-birt-processors</module>
+  	<module>nifi-birt-nar</module>
+  </modules>
+  
+  
+</project>

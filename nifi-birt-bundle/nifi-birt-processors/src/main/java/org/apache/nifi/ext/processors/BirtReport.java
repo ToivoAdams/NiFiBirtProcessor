@@ -149,24 +149,6 @@ public class BirtReport extends AbstractProcessor {
     	engine = null;
     }
 
-    /****    
-    @OnAdded
-    public void onAdded() {
-//    public void onAdded(final ProcessContext context) {
-    	 //       String logDir = context.getProperty(LOG_FILES_DIR).getValue();
-    	 //       engine = createEngine(logDir);
-    }
-***/
-/****
-    @OnRemoved
-    public void onRemoved() {
-//        public void onRemoved(final ProcessContext context) {
-    	// Birt shutdown, release all the resources.
-    	engine.destroy();
-    	Platform.shutdown();
-    }
-****/
-    
     @Override
     public Set<Relationship> getRelationships() {
         return relationships;

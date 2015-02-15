@@ -104,6 +104,7 @@ public class BirtReport extends AbstractProcessor {
     public static final PropertyDescriptor LOG_FILES_DIR = new PropertyDescriptor.Builder()
     .name("Birt log files directory")
     .description("Birt log files directory.")
+    .defaultValue("/var/log/birt")
     .required(true)
     .addValidator(StandardValidators.createDirectoryExistsValidator(true, true))
     .build();

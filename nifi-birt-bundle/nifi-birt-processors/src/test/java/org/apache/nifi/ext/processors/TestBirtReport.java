@@ -33,7 +33,7 @@ public class TestBirtReport {
 
 	@Test
 	public void testCreateEngine() {
-		IReportEngine engine = BirtReport.createEngine("");
+		IReportEngine engine = BirtReport.createEngine("/var/log/birt");
 		assertNotNull(engine);
 	}
 
@@ -60,7 +60,7 @@ public class TestBirtReport {
 		assertNotNull(customerEelements);
 		assertTrue(customerEelements.size()>0);
 		
-		IReportEngine engine = BirtReport.createEngine("/var/log");
+		IReportEngine engine = BirtReport.createEngine("/var/log/birt");
 		assertNotNull(engine);		
 		
 		System.out.println("nr of customers " + customerEelements.size());
@@ -113,7 +113,7 @@ public class TestBirtReport {
     public void testNonXmlContent() throws IOException {
         final TestRunner runner = TestRunners.newTestRunner(new BirtReport());
         runner.setProperty(BirtReport.DESIGN_FILE_NAME, "src/test/resources/TestBirtReport/Customer.rptdesign");
-        runner.setProperty(BirtReport.LOG_FILES_DIR, 	"/var/log");
+        runner.setProperty(BirtReport.LOG_FILES_DIR, 	"/var/log/birt");
         runner.setProperty(BirtReport.OUTPUT_FORMAT, 	"PDF");
 
         final Map<String, String> attributes = new HashMap<>();
@@ -136,7 +136,7 @@ public class TestBirtReport {
     public void testXmlContent() throws IOException {
         final TestRunner runner = TestRunners.newTestRunner(new BirtReport());
         runner.setProperty(BirtReport.DESIGN_FILE_NAME, "src/test/resources/TestBirtReport/Customer.rptdesign");
-        runner.setProperty(BirtReport.LOG_FILES_DIR, 	"/var/log");
+        runner.setProperty(BirtReport.LOG_FILES_DIR, 	"/var/log/birt");
         runner.setProperty(BirtReport.OUTPUT_FORMAT, 	"PDF");
         
 		Path xmlpath = Paths.get("src/test/resources/TestBirtReport/CustSample.xml");

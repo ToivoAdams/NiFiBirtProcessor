@@ -30,9 +30,11 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
+import org.apache.commons.io.FilenameUtils;
 import org.apache.nifi.components.AllowableValue;
 import org.apache.nifi.components.PropertyDescriptor;
 import org.apache.nifi.flowfile.FlowFile;
+import org.apache.nifi.flowfile.attributes.CoreAttributes;
 import org.apache.nifi.stream.io.BufferedInputStream;
 import org.apache.nifi.logging.ProcessorLog;
 import org.apache.nifi.processor.AbstractProcessor;
@@ -173,13 +175,13 @@ public class BirtReport extends AbstractProcessor {
         final StopWatch stopWatch = new StopWatch(true);
         
         try {
+            final String outFormat = context.getProperty(OUTPUT_FORMAT).getValue();
             FlowFile transformed = session.write(original, new StreamCallback() {
                 @Override
                 public void process(final InputStream rawIn, final OutputStream out) throws IOException {
                     try (final InputStream in = new BufferedInputStream(rawIn)) {
 
                         File designFile = new File(context.getProperty(DESIGN_FILE_NAME).getValue());
-                        String outFormat = context.getProperty(OUTPUT_FORMAT).getValue();
                         render(engine, rawIn, out, designFile, outFormat);
                         
                     } catch (final Exception e) {
@@ -187,6 +189,13 @@ public class BirtReport extends AbstractProcessor {
                     }
                 }
             });
+            
+            // create new filename with appropriate extension
+            final String filename = original.getAttribute(CoreAttributes.FILENAME.key());
+            String basename = FilenameUtils.getBaseName(filename);
+            String newFilename = basename + "." + outFormat; 
+            transformed = session.putAttribute(transformed, CoreAttributes.FILENAME.key(), newFilename);
+            
             session.transfer(transformed, REL_SUCCESS);
             session.getProvenanceReporter().modifyContent(transformed, stopWatch.getElapsed(TimeUnit.MILLISECONDS));
             logger.info("Transformed {}", new Object[]{original});

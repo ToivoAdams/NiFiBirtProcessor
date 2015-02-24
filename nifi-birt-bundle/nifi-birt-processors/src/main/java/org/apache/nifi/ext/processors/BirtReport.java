@@ -122,7 +122,7 @@ public class BirtReport extends AbstractProcessor {
     private Set<Relationship> relationships;
 
     /** Birt report engine. BIRT report engine is thread-safe */
-    private IReportEngine engine;
+    private volatile IReportEngine engine;
 
     @Override
     protected void init(final ProcessorInitializationContext context) {
